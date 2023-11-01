@@ -14,7 +14,7 @@ public class Alumno {
 	private String direccionCiudad;
 	private String direccionLocalidad;
 	private Integer direccionCP;
-	private String dni;
+	private Integer dni;
 	private LocalDate fechaNac;
 	private String telefono;
 	private String correoElectronico;
@@ -88,11 +88,11 @@ public class Alumno {
 		this.direccionCP = direccionCP;
 	}
 
-	public String getDni() {
+	public Integer getDni() {
 		return dni;
 	}
 
-	public void setDni(String dni) {
+	public void setDni(Integer dni) {
 		this.dni = dni;
 	}
 
