@@ -13,12 +13,12 @@
 		<h2>Carga de DOCENTES</h2>
 		<div>
 			<form th:object="${docente}" th:action="@{/cargarDocente}" method="post">
-				<label class="form-label" for="dni">DNI:</label>
-				<input class="form-control" type="number" id="dni" th:field="*{dni}" required><br>
 				<label class="form-label" for="nombre">Nombre:</label>
 				<input class="form-control" type="text" id="nombre" th:field="*{nombre}"><br>
 				<label class="form-label" for="apellido">Apellido:</label>
 				<input class="form-control" type="text" id="apellido" th:field="*{apellido}"><br>
+				<label class="form-label" for="dni">DNI:</label>
+				<input class="form-control" type="number" id="dni" th:field="*{dni}" required><br>
 				<label class="form-label" for="direccion">Dirección:</label>
 				<input class="form-control" type="text" id="direccion" th:field="*{direccion}"><br>
 				<label class="form-label" for="fechaNac">Fecha de Nacimiento:</label>
