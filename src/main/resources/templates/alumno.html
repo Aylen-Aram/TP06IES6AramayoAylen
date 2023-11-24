@@ -10,40 +10,41 @@
 <body style="background-color: lightcyan;">
 	<div class="container">
 		<h2>Carga de ALUMNOS</h2>
-		<div>
-			<form th:object="${alumno}" th:action="@{/cargarAlumno}" method="post">
+		<div style="display: flex; justify-content: space-between;">
+			<form th:object="${alumno}" th:action="@{/cargarAlumno}" method="post" style="width: 60%;">
 				<label class="form-label" for="nombre">Nombre:</label>
-				<input class="form-control" type="text" id="nombre" th:field="*{nombre}"><br>
+				<input class="form-control" type="text" id="nombre" th:field="*{nombre}"style="width: 200px;"><br>
 				<label class="form-label" for="apellido">Apellido:</label>
-				<input class="form-control" type="text" id="apellido" th:field="*{apellido}"><br>
+				<input class="form-control" type="text" id="apellido" th:field="*{apellido}" style="width: 200px;"><br>
 				<label class="form-label" for="direccionCalle">Calle:</label>
-				<input class="form-control" type="text" id="direccionCalle" th:field="*{direccionCalle}"><br>
+				<input class="form-control" type="text" id="direccionCalle" th:field="*{direccionCalle}" style="width: 300px;"><br>
 				<label class="form-label" for="direccionNumero">Número:</label>
-				<input class="form-control" type="number" id="direccionNumero" th:field="*{direccionNumero}"><br>
+				<input class="form-control" type="number" id="direccionNumero" th:field="*{direccionNumero}" style="width: 150px;"><br>
 				<label class="form-label" for="direccionBarrio">Barrio:</label>
-				<input class="form-control" type="text" id="direccionBarrio" th:field="*{direccionBarrio}"><br>
+				<input class="form-control" type="text" id="direccionBarrio" th:field="*{direccionBarrio}" style="width: 400px;"><br>
 				<label class="form-label" for="direccionCiudad">Ciudad:</label>
-				<input class="form-control" type="text" id="direccionCiudad" th:field="*{direccionCiudad}"><br>
+				<input class="form-control" type="text" id="direccionCiudad" th:field="*{direccionCiudad}" style="width: 200px;"><br>
 				<label class="form-label" for="direccionLocalidad">Localidad:</label>
-				<input class="form-control" type="text" id="direccionLocalidad" th:field="*{direccionLocalidad}"><br>
+				<input class="form-control" type="text" id="direccionLocalidad" th:field="*{direccionLocalidad}" style="width: 200px;"><br>
 				<label class="form-label" for="direccionCP">Código Postal:</label>
-				<input class="form-control" type="number" id="direccionCP" th:field="*{direccionCP}"><br>
+				<input class="form-control" type="number" id="direccionCP" th:field="*{direccionCP}" style="width: 200px;"><br>
 				<label class="form-label" for="dni">DNI:</label>
-				<input class="form-control" type="number" id="dni" th:field="*{dni}"><br>
+				<input class="form-control" type="number" id="dni" th:field="*{dni}" style="width: 200px;"><br>
 				<label class="form-label" for="fechaNac">Fecha de Nacimiento:</label>
-				<input class="form-control" type="date" id="fechaNac" th:field="*{fechaNac}"><br>
+				<input class="form-control" type="date" id="fechaNac" th:field="*{fechaNac}" style="width: 200px;"><br>
 				<label class="form-label" for="telefono">Teléfono:</label>
-				<input class="form-control" type="tel" id="telefono" th:field="*{telefono}"><br>
+				<input class="form-control" type="tel" id="telefono" th:field="*{telefono}" style="width: 200px;"><br>
 				<label class="form-label" for="correoElectronico">Email:</label>
-				<input class="form-control" type="email" id="correoElectronico" th:field="*{correoElectronico}"><br>
+				<input class="form-control" type="email" id="correoElectronico" th:field="*{correoElectronico}" style="width: 400px;"><br>
 								
 			 <a type="button" class="btn btn-success" href="/index">Menú Inicio</a>
 				<input type="submit" class="btn btn-success" value="Cargar Alumno">
 				<a type="button" class="btn btn-success" href="/mostrarListado">Listado de Alumnos</a>
 				<a type="button" class="btn btn-success" href="/docente">Docente</a>
 				<input type="button" class="btn btn-success" value="Actualizar Página" onclick="document.location.reload();">
-		</form>
-	</div>
+		 </form>
+            <img src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-students-on-computers-vector-png-image_12162112.png" alt="Descripción de la imagen" style="width: 555px;height: 555px;">
+        </div>
 	<script>
 		let buttons = document.getElementsByClassName('btn-success');
 		for(let i=0; i<buttons.length; i++) {

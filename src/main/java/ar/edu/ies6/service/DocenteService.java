@@ -40,4 +40,18 @@ public class DocenteService {
 		return docenteRepository.findById(dni).orElseThrow(()-> new Exception("Docente no encontrado"));
 	}
 
+	public void actualizarDocente(Docente docente) {
+	    Docente docenteEncontrado = encontrarDocentePorDni(docente.getDni());
+	    if (docenteEncontrado != null) {
+	        docenteEncontrado.setNombre(docente.getNombre());
+	        docenteEncontrado.setApellido(docente.getApellido());
+	        docenteEncontrado.setTelefono(docente.getTelefono());
+	        docenteRepository.save(docenteEncontrado);
+	    }
+	}
+
+	private Docente encontrarDocentePorDni(Integer dni) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
