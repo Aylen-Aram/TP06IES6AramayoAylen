@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
@@ -14,6 +16,8 @@ import jakarta.persistence.Id;
 public class Docente {
 	
 	@Id
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
 	private Integer dni;
 	@Column
 	private String nombre;

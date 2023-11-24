@@ -11,7 +11,7 @@
 		crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: lightcyan;">
 	<div class="container">
 		<table class="table table-dark table-striped-columns">
 			<tr>
@@ -52,9 +52,18 @@
 						</tr>
 		</table>
 		<form>
-			<input type="button" onclick="history.back()" name="Volver atrás" value="Volver atrás">
-			<input type="button" value="Recargar página" onClick="location.reload();"/>
+			<a type="button" class="btn btn-success" href="/index">Menú Inicio</a>
+			<a type="button" class="btn btn-success" href="/docente">Docentes</a>
+			<a type="button" class="btn btn-success" href="/alumno">Alumnos</a>
+			<input type="button" class="btn btn-success" value="Actualizar Página" onclick="document.location.reload();">
 		</form>
 	</div>
+	<script>
+		let buttons = document.getElementsByClassName('btn-success');
+		for(let i=0; i<buttons.length; i++) {
+			buttons[i].style.backgroundColor = 'purple';
+		}
+	</script>
 </body>
+
 </html>

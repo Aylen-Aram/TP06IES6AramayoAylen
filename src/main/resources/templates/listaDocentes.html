@@ -11,13 +11,13 @@
 		crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: lightcyan;">
 	<div class="container">
 		<h2>Listado de DOCENTES</h2>
 		<table class="table table-bordered border-success">
 			<thead class="table-success">
 				<tr>
-					<th>DNI</th>
+				    <th>DNI</th>
 					<th>Nombre</th>
 					<th>Apellido</th>
 					<th>Dirección</th>
@@ -55,6 +55,12 @@
 			<input type="button" class="btn btn-success" value="Actualizar Página" onclick="document.location.reload();">
 		</form>
 	</div>
+	<script>
+		let buttons = document.getElementsByClassName('btn-success');
+		for(let i=0; i<buttons.length; i++) {
+			buttons[i].style.backgroundColor = 'purple';
+		}
+	</script>
 </body>
 
 </html>
